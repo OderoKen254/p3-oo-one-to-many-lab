@@ -35,6 +35,7 @@ class Pet:
             raise Exception("owner must be an instance of Owner")
         self._owner = value
         
+        
 
 class Owner:
     def __init__(self, name):
@@ -49,7 +50,6 @@ class Owner:
     def name(self):
         return self._name
 
-    @property
     def pets(self):
         return self._pets
 
