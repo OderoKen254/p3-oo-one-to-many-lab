@@ -15,6 +15,8 @@ class Pet:
         self._name = name
         self._pet_type = pet_type
         self._owner = owner
+        if owner is not None:
+            owner.add_pet(self)  # Automatically add this pet to the owner's _pets list
         Pet.all.append(self)
 
     @property
